@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>StarApp Bot 🤖</h1>
+  <button (click)="getBotMessage()">Get Bot Message</button>
+  <button (click)="getProgress()">View Progress</button>
+
+  <div *ngIf="botMessage">
+      <h3>Bot Response:</h3>
+      <p>{{ botMessage }}</p>
+  </div>
+
+  <div *ngIf="progress">
+      <h3>Progress:</h3>
+      <p>{{ progress }}</p>
+  </div>
+</div>
