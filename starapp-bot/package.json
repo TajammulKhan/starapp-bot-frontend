@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "serve -s dist/starapp-bot -l 8080",
+    "start": "npx serve -s dist/starapp-bot -l 8080",
     "build": "ng build --configuration=production",
-    "postinstall": "ng build --configuration=production",
+    "postinstall": "npm install -g @angular/cli && ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -34,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "serve": "^14.2.4",
     "typescript": "~5.7.2"
   }
 }
