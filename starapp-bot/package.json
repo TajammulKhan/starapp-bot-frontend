@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npx serve -s dist/starapp-bot -l 8080",
-    "build": "ng build --configuration=production",
-    "postinstall": "npm install -g @angular/cli && npm ci",
-    "watch": "ng build --watch --configuration development",
+    "build": "npx ng build --configuration=production",
+    "postinstall": "npm install -g @angular/cli && npm install",
+    "watch": "npx ng build --watch --configuration development",
     "test": "ng test"
-  },
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
