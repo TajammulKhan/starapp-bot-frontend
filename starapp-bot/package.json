@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "serve -s dist/starapp-bot-frontend -l 8080",
+    "start": "serve -s dist/starapp-bot -l 8080",
     "build": "ng build --configuration=production",
     "postinstall": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
